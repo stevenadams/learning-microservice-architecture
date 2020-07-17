@@ -7,7 +7,7 @@ export default () => {
     const onFormSubmit = async (evt) => {
         evt.preventDefault()
 
-        await axios.post('http://localhost:4000/posts', {
+        await axios.post('http://posts-microservice.com/posts/create', {
             title
         })
 
